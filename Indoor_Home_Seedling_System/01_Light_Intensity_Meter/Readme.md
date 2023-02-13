@@ -51,14 +51,17 @@ BH1750 wiring will be as the following:
 3. SCL  ->  SCL1 or 21 for ArduinoMega (SCL1 in my case)  //if you're using other boards just check your SCL pin 
 4. SDA  ->  SDA1 or 20 for ArduinoMega (SDA1 in my case)  //if you're using other boards just check your SDA pin
 
+Diagram:
+
 ## Coding: 
+### libraries:
 Once we finished wiring, we'll install <BH1750.h> and <Wire.h> libraries and use the following code to define our light meter: 
 ```
 #include <Wire.h>
 #include <BH1750.h>
 BH1750 lightMeter;
 ```
-
+### void setup():
 Then, we'll initiate both **Wire** and **lightmeter** in the **void setup()** as the following: 
 ```
 void setup()
@@ -68,9 +71,10 @@ void setup()
   lightMeter.begin();
 }
 ```
-
+### void loop():
 Finally, in the **void loop()**, we'll record meter reading as *float* then print it and delay for 1 second: 
-```void loop() 
+```
+void loop() 
 {  
   float lux = lightMeter.readLightLevel();                
   
@@ -78,8 +82,15 @@ Finally, in the **void loop()**, we'll record meter reading as *float* then prin
   Serial.print(lux);
   Serial.println(" lx");
   delay(1000);
-}```
+}
+```
+
+## Serial Monitor: 
 
 
 
+## Notes:
+Keep in mind that SCL and SDA pins will be used for RTC and I2C LCD screen. Arduino Mega got 2 pins for each, but smaller boards usually got one only and there is where breadboard is needed.
 
+
+See you in the next project...
