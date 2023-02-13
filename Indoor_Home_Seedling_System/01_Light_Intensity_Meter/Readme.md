@@ -70,16 +70,15 @@ void setup()
 ```
 
 Finally, in the **void loop()**, we'll record meter reading as *float* then print it and delay for 1 second: 
-```
-void loop() 
-{  float lux = lightMeter.readLightLevel();                
+```void loop() 
+{  
+  float lux = lightMeter.readLightLevel();                
   
   Serial.print("Light: ");
   Serial.print(lux);
   Serial.println(" lx");
   delay(1000);
-}
-```
+}```
 
 
 
