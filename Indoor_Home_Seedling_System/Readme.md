@@ -7,6 +7,15 @@ My passion for indoor plants is hindered by my frequent absences from home, leav
 ### Project Outcome: 
 That's why I aim to design an automated lighting and irrigation system for my indoor plants to ensure they receive the proper care and attention, even when I am away
 
+### Compact microProjects: 
+1. Light Intensity meter - BH1750
+2. Real Time Clock
+3. MicroSD Card csv data collection
+4. Temperature and Humidity - DHT22
+5. Capasitive Soil Moisture sensor
+6. Relay modules and load wiring (with Insights and Pro Tips)
+7. LCD Screen 
+
 ### Tools Needed:
 1.   Arduino Mega 2560 Rev3 or any other type ( https://amzn.to/3E3U577 )
 2.   USB type A to type B ( https://amzn.to/3xgKFB5 )
@@ -25,15 +34,6 @@ That's why I aim to design an automated lighting and irrigation system for my in
 14.  Box (~240mm x 130mm x 90mm)
 15.  LED lights as needed
 16.  Water bucket with connections
-
-### Compact microProjects: 
-1. Light Intensity meter - BH1750
-2. Real Time Clock
-3. MicroSD Card csv data collection
-4. Temperature and Humidity - DHT22
-5. Capasitive Soil Moisture sensor
-6. Relay modules and load wiring (with Insights and Pro Tips)
-7. LCD Screen 
 
 
 ## Keep in mind: 
