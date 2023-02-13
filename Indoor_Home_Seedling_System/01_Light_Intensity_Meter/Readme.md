@@ -119,6 +119,6 @@ You can always outsource 5.0v and GND using external DC supply. Always check mod
 
 See you in the next microProject...
 
-[2. Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
+[Next: 2. Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
 
 
