@@ -50,8 +50,8 @@ Once we finished wiring, we'll install ```<DS3231.h>``` library and use the foll
 #include <DS3231.h>
 DS3231  rtc(SDA, SCL);                                    // write the used pins in the following sequence(SDA, SCL) 
 ```
-### void setup():
-In ```void setup():```, RTC programming is tricky and needs attention, we'll have to initiate **rtc** in the **void setup()** and apply current time and date code that will be deleted (or commented) after the first successful run. It will be as the following:  
+### void setup()
+In ```void setup()```, RTC programming is tricky and needs attention, we'll have to initiate **rtc** in the **void setup()** and apply current time and date code that will be deleted (or commented) after the first successful run. It will be as the following:  
 ```
 void setup()
 {
@@ -67,7 +67,7 @@ void setup()
 
 Once the run is successful, the ```void setup()``` code will be adjusted (as will be shown at the end). 
 
-### void loop():
+### void loop()
 Finally, in the **void loop()**, we'll print current date and time and delay for 1 second: 
 ```
 void loop() 
