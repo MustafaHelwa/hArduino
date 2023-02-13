@@ -64,94 +64,29 @@ Finally, in the ```void loop()```, we'll write our collected data from project 1
 ```
 void loop() 
 {  
-   lcd.clear();                                              // cleaing screen
-   lcd.home();                                               // back cursor to home 
+    dataFile = SD.open("data.txt", FILE_WRITE);                         // Opening data file on SD card to start writing
    
-   lcd.print("Date:");
-   lcd.print(rtc.getDateStr());                              // Send date, check RTC lines
-   
-   lcd.setCursor(0,1);                                       // setting cursor place
-   lcd.print("Time:");
-   lcd.print(rtc.getTimeStr());                              // Send time, check RTC lines
-   lcd.print("          ");
-   
-   lcd.setCursor(0,2);                                       
-   lcd.print("T:");
-   lcd.print(int(t));
-   lcd.print("C - H:");
-   lcd.print(int(h));
-   lcd.print("%");
-   
-   lcd.setCursor(0,3);                                       
-   lcd.print("Light:");
-   lcd.print(int(lux));
-   lcd.print(" lx");
-   
-   lcd.setCursor(17,0);
-   lcd.print("L:");
-   if (lightstatus == 1) lcd.print("H");
-   else lcd.print("L");
+    if (dataFile) 
+    {
+    
+    Serial.print("Recording on SD Card... ");       // to keep tracking that file is available 
+    
+    dataFile.print("13-2-2023"); 
+    dataFile.print (", ");                          // , since I'll use excel csv file later
+    dataFile.print ("15:27:31");                    // recording full time (hh:mm:ss)
+    dataFile.print(", " );
+    dataFile.print("25.17");
+    dataFile.print(", " );
+    dataFile.print("17695.125");                    // recording lux
+    dataFile.println();                             // new line
+    dataFile.close();                               // close the file
 
-   lcd.setCursor(17,1);
-   lcd.print ("V:");
-   if (valvestatus == 1) lcd.print("H");
-   else lcd.print("L");
-
-   lcd.setCursor(17,2);
-   lcd.print("SDC");
-   lcd.setCursor(17,3);
-}
-```
-
-### Final Code: 
-This is the code result, you can copy it as it is: 
-```
-#include <SPI.h>
-#include <SD.h>
-File dataFile;
-
-void setup()
-{
-  SD.begin(53);
-  dataFile = SD.open("data.txt", FILE_WRITE);            
-}
-
-void loop() 
-{  
-   lcd.clear();
-   lcd.home();    
-   lcd.print("Date:");
-   lcd.print(rtc.getDateStr());
-   lcd.setCursor(0,1);
-   lcd.print("Time:");
-   lcd.print(rtc.getTimeStr());
-   lcd.print("          ");
-   
-   lcd.setCursor(0,2);                                       
-   lcd.print("T:");
-   lcd.print(int(t));
-   lcd.print("C - H:");
-   lcd.print(int(h));
-   lcd.print("%");
-   
-   lcd.setCursor(0,3);                                       
-   lcd.print("Light:");
-   lcd.print(int(lux));
-   lcd.print(" lx");
-   
-   lcd.setCursor(17,0);
-   lcd.print("L:");
-   if (lightstatus == 1) lcd.print("H");
-   else lcd.print("L");
-
-   lcd.setCursor(17,1);
-   lcd.print ("V:");
-   if (valvestatus == 1) lcd.print("H");
-   else lcd.print("L");
-
-   lcd.setCursor(17,2);
-   lcd.print("SDC");
-   lcd.setCursor(17,3);
+    Serial.println("Recording done :)");
+  }
+  else                                              // if recording on SD card failed
+    {
+      Serial.println("Error recording data!!!");
+    }
 }
 ```
 
@@ -163,11 +98,11 @@ void loop()
 
 ## Notes:
 - This project will not work without adding project 1 and project 2 variables. But, you can remove them and add your own lines for testing
-- You can adjust the cursor position using ```lcd.setCursor(x,y)``` where x is the column number and y is the row number starting from 0
+- You can track recording failure using serial monitor as shown the end of the loop above 
 
 
 ### Pro Tip!!
-Using I2C bus modules will always minimize your wiring and coding efforts. 
+Saving data in a *.txt* file separated by *", " (comma followed by space)* will make it convenient for importing into Excel for data plotting and analysis.
 
 
 
