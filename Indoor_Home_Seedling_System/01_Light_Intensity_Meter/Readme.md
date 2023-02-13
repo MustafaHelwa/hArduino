@@ -8,7 +8,7 @@ Proper lighting is crucial, and to achieve that, we need to measure it. Our firs
 The outcome of this project is a functioning light intensity meter to accurately measure and ensure proper lighting.
 
 ### Compact microProjects: 
-**1. Light Intensity meter - BH1750**
+1. **Light Intensity meter - BH1750**
 2. Real Time Clock
 3. MicroSD Card csv data collection
 4. Temperature and Humidity - DHT22
