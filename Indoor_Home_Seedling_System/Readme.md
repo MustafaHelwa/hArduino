@@ -39,7 +39,7 @@ That's why I aim to design an automated lighting and irrigation system for my in
 ## Keep in mind: 
 - Please note that while the modules I used in my project are listed above, you may choose to use similar or different modules. Just keep in mind that different modules may require different connections and libraries, so be sure to check their specifications before you begin.
 - This project has a specific purpose, but I will guide you through each step of the connections to help you understand how each module works. By doing so, you will be able to make your own innovative adjustments for your unique application.
-- Please be aware that I am using 240V AC connections in my project, and I highly advise seeking professional assistance for such high voltage connections as it can be dangerous without proper knowledge and experience. For your safety, I suggest using lower voltage loads, which will not impact the project procedure as I will explain in further detail.
+- Please be aware that I am using 240VAC connections in my project, and I highly advise seeking professional assistance for such high voltage connections as it can be dangerous without proper knowledge and experience. For your safety, I suggest using lower voltage loads, which will not impact the project procedure as I will explain in further detail.
 
 
 Stay safe and Have Fun :)
