@@ -9,7 +9,7 @@ The outcome of this project is a functioning light intensity meter to accurately
 
 ### Compact microProjects: 
 1. **Light Intensity meter - BH1750**
-2. <sub>Real Time Clock</sub>
+<sub>2. Real Time Clock</sub>
 3. <sub>MicroSD Card csv data collection</sub>
 4. Temperature and Humidity - DHT22
 5. Capasitive Soil Moisture sensor
