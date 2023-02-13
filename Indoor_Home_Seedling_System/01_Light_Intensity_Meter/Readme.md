@@ -8,13 +8,13 @@ Proper lighting is crucial, and to achieve that, we need to measure it. Our firs
 The outcome of this project is a functioning light intensity meter to accurately measure and ensure proper lighting.
 
 ### Compact microProjects: 
-***1. Light Intensity meter - BH1750
-<sub>2. Real Time Clock
+**1. Light Intensity meter - BH1750**
+2. Real Time Clock
 3. MicroSD Card csv data collection
 4. Temperature and Humidity - DHT22
 5. Capasitive Soil Moisture sensor
 6. Relay modules and load wiring (with Insights and Pro Tips)
-7. LCD Screen</sub>
+7. LCD Screen
 
 ### Tools Needed:
 1.   Arduino Mega 2560 Rev3 or any other type ( https://amzn.to/3E3U577 )
