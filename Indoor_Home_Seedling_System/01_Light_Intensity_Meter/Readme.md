@@ -36,11 +36,29 @@ The outcome of this project is a functioning light intensity meter to accurately
 17.  ~~Water bucket with connections~~
 
 
-## Keep in mind: 
-- Please note that while the modules I used in my project are listed above, you may choose to use similar or different modules. Just keep in mind that different modules may require different connections and libraries, so be sure to check their specifications before you begin.
-- This project has a specific purpose, but I will guide you through each step of the connections to help you understand how each module works. By doing so, you will be able to make your own innovative adjustments for your unique application.
-- Please be aware that I am using 240VAC connections in my project, and I highly advise seeking professional assistance for such high voltage connections as it can be dangerous without proper knowledge and experience. For your safety, I suggest using lower voltage loads, which will not impact the project procedure as I will explain in further detail.
+## Work Inroduction:
+In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and BH1750 light sensor. We'll also, need jumpers for wiring. If you're planning to complete the indoor seedling project set, please use breadboard for the following connections:
+- 3.3V
+- GND
+- SCL
+- SDA
+Having additional pins for those will make it easier in the coming microProjects. 
+
+## Wiring:
+BH1750 wiring will be as the following: 
+1. VCC  ->  3.3v
+2. GND  ->  GND
+3. SCL  ->  SCL1 or 21 for ArduinoMega (SCL1 in my case)  //if you're using other boards just check your SCL pin 
+4. SDA  ->  SDA1 or 20 for ArduinoMega (SDA1 in my case)  //if you're using other boards just check your SDA pin
+
+## Coding: 
+Once we finished wiring, we'll install <BH1750.h> and <Wire.h> libraries and use the following code: 
+
+```
+#include <Wire.h>
+#include <BH1750.h>
+BH1750 lightMeter;
+```
 
 
-Stay safe and Have Fun :)
 
