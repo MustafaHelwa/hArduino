@@ -112,7 +112,8 @@ void loop()
 - Arduino Mega maximum baud rate is (115200) bps, while Uno is only (9600) bps. Check yours board baud rate and put it in ```Serial.begin(9600);``` line 
 
 
-### Pro Tip!! **You can always outsource 5.0v and GND using external DC supply. Always check module voltage range before applying external source current.**
+### Pro Tip!!
+You can always outsource 5.0v and GND using external DC supply. Always check module voltage range before applying external source current.
 
 
 
