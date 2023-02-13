@@ -9,8 +9,8 @@ The outcome of this project is a functioning light intensity meter to accurately
 
 ### Compact microProjects: 
 1. **Light Intensity meter - BH1750**
-<sub>2. Real Time Clock</sub>
-3. <sub>MicroSD Card csv data collection</sub>
+2. Real Time Clock
+3. MicroSD Card csv data collection
 4. Temperature and Humidity - DHT22
 5. Capasitive Soil Moisture sensor
 6. Relay modules and load wiring (with Insights and Pro Tips)
@@ -23,17 +23,17 @@ The outcome of this project is a functioning light intensity meter to accurately
 4.   Power Supply ( https://amzn.to/412eTpo )
 5.   Jumper wires ( https://amzn.to/3XqQXc4 )
 6.   Digital Light sensor - BH1750FVI ( https://amzn.to/3IhshP4 )
-7.   Real Time Clock Module - DS3231 ( https://amzn.to/3E2z7Fx )
-8.   Micro SD Card Module ( https://amzn.to/3xfDSYD )
-9.   Micro SD Card with adaptor - Any capacity ( https://amzn.to/3xl3AuS )
-10.  DHT22 sensor ( https://amzn.to/3YrYdWC )
-11.  Capasitive soil moisture sensor ( https://amzn.to/3Ypcu6d )
-12.  8 Relay Module ( https://amzn.to/40UXPBI )
-13.  LCD Screen 20x4 I2C ( https://amzn.to/3XqoR0G )
-14.  5VDC Water pump ( https://amzn.to/3RWB38d )
-14.  Box (~240mm x 130mm x 90mm)
+~~7.   Real Time Clock Module - DS3231 ( https://amzn.to/3E2z7Fx )
+~8.   Micro SD Card Module ( https://amzn.to/3xfDSYD )
+~9.   Micro SD Card with adaptor - Any capacity ( https://amzn.to/3xl3AuS )
+~10.  DHT22 sensor ( https://amzn.to/3YrYdWC )
+~11.  Capasitive soil moisture sensor ( https://amzn.to/3Ypcu6d )
+~12.  8 Relay Module ( https://amzn.to/40UXPBI )
+~13.  LCD Screen 20x4 I2C ( https://amzn.to/3XqoR0G )
+~14.  5VDC Water pump ( https://amzn.to/3RWB38d )
+~14.  Box (~240mm x 130mm x 90mm)
 15.  LED lights as needed
-16.  Water bucket with connections
+~~16.  Water bucket with connections
 
 
 ## Keep in mind: 
