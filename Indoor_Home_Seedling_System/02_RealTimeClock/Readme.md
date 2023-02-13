@@ -1,4 +1,4 @@
-# 1. Light Intensity meter - BH1750 
+# 2. Real Time Clock - DS3231 
 
 ## What's Inside?
 ### Problem: 
