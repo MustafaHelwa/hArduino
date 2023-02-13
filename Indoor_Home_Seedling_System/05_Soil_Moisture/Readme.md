@@ -1,18 +1,18 @@
-# 4. Temperature and Humidity - DHT22
+# 5. Capasitive Soil Moisture sensor
 
 ## What's Inside?
 ### Problem: 
-Monitoring temperature and humidity is important for data tracking, even when we're indoors
+To effectively water our pots, we need to know when it's required.
 
 ### Project Outcome: 
-The outcome of this project will be a system for tracking indoor temperature and humidity, to ensure accurate surrounding climate monitoring.
+The outcome of this project will be a system for detecting soil moisture, ensuring watering when only it is necessary for our pots.
 
 ### Compact microProjects: 
 1. ~~Light Intensity meter - BH1750~~
 2. ~~Real Time Clock~~
 3. ~~MicroSD Card csv data collection~~
-4. **Temperature and Humidity - DHT22**
-5. Capasitive Soil Moisture sensor
+4. ~~Temperature and Humidity - DHT22~~
+5. **Capasitive Soil Moisture sensor**
 6. Relay modules and load wiring (with Insights and Pro Tips)
 7. LCD Screen
 
@@ -22,52 +22,53 @@ The outcome of this project will be a system for tracking indoor temperature and
 3.   Breadboard ( https://amzn.to/3xBzaol )
 4.   Power Supply ( https://amzn.to/412eTpo )
 5.   Jumper wires ( https://amzn.to/3XqQXc4 )
-6.   DHT22 sensor ( https://amzn.to/3YrYdWC )
+6.   Capasitive soil moisture sensor ( https://amzn.to/3Ypcu6d )
 
 
 ## Work Inroduction:
-In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and DHT22 module. We'll also need jumpers for wiring. 
+In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and Capasitive soil moisture sensor. We'll also need jumpers for wiring. 
 
 ## Wiring:
-DHT22 wiring for Arduino Mega will be as the following: 
-1.  + -> 3.3v
-2.  - -> GND
-3.  Out -> 2 (or any other PWM pin)  
+Capasitive soil moisture sensor wiring for Arduino Mega will be as the following: 
+1.  GND -> GND
+2.  VCC -> 3.3V
+3.  AOOT -> A0 (or any analog input pin) 
 
 Diagram:
 
 ## Coding: 
 ### libraries:
-Once we finished wiring, we'll install ```<DHT.h>``` library and use the following code to define our used pin, sensor type, and dht variable: 
+Once we finished wiring, we'll use the following code to define our pin. There is no library needed for Soil Moisture sensor (we'll do our own mapping): 
 ```
-#include <DHT.h>
-#define DHTPin 2                                        // any PWM pin works (2 in my case)
-#define DHTType DHT22                                   // DHT22 or DHT11 (DHT22 in my case)
-DHT dht = DHT(DHTPin, DHTType);
+#define SoilMoisturePin A0    // or any analog pin used
 ```
 ### void setup():
-Then, we'll initiate **dht** and in the ```void setup()``` as the following: 
+Since we don't have any library, we'll not add any code in ```void setup()``` and it will be as the following: 
 ```
 void setup()
 {
   Serial.begin(9600);
-  dht.begin();
 }
 ```
 ### void loop():
-Finally, in the ```void loop()```, we'll read and write humidity and temperatture and delay for 1 second: 
+Finally, in the ```void loop()```, we'll read and write soil moisture and delay for 1 second **(please read each line notes for clarification)**: 
 ```
 void loop() 
 {  
-  float h = dht.readHumidity();
-  float t = dht.readTemperature();
+  float SoilMoistureValue = 0;                           // Starting with zero value to make sure the below is not carried from the last previous reading
 
-  Serial.print("Temp: ");
-  Serial.print(t);
-  Serial.print(" C, Humidity: ");
-  Serial.print(h);
+  for (int i = 0; i <= 100; i++)                         // the below for loop used to take 101 readings (form 0 to 100) and accumilate the value of readings 
+  { 
+    SoilMoistureValue = SoilMoistureValue + analogRead(SoilMoisturePin); 
+    delay(1); 
+  } 
+  SoilMoistureValue = SoilMoistureValue/101.0;           // this line calculates the average soil moisture readings recorded in the for loop above
+  
+  Serial.print("Soil moisture: ");
+  SoilMoistureValue = map ( SoilMoistureValue, 575 ,276 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
+    
+  Serial.print(SoilMoistureValue);                              
   Serial.println("%");
-  delay (1000);
 }
 ```
 
@@ -78,18 +79,18 @@ void loop()
 
 
 ## Notes:
-- you can use the following code to transfer temperature from °C to °F ```h = ((h*(9/5))+32);```
-- If you're using other dht22 sensors, connection will be different (plane sensors come with4 pins and resistor will be needed)
+- In ```map(SoilMoistureValue, x, y, 0, 100);``` x will be the value when sensor is in the air and y will be the value when the sensor is in the water
+- To get x and y values, comment ```line 68``` and do 2 runs (one in the air and one in the water) and record the values as explained above
 
 
 ### Pro Tip!!
-- Using ready to use modules will minimize your wiring headache 
+- You can use multiple sensors on different depths and react accordingly
 
 
 
 See you in the next microProject...
 
-[Next: 5. Capasitive Soil Moisture sensor](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/05_Soil_Moisture)
+[Next: 6. Relay modules and load wiring](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/06_Relays)
 
 
 
