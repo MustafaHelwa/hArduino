@@ -154,7 +154,7 @@ void loop()
 
 
 ### Pro Tip!!
-**You can monitor RTC temperature using   ```Serial.print(rtc.getTemp());```**
+You can monitor RTC temperature using   ```Serial.print(rtc.getTemp());```
 
 
 
