@@ -127,5 +127,6 @@ void loop()
 
 
 See you in the next microProject... 
-[a relative link](hArduino/Indoor_Home_Seedling_System/02_RealTimeClock/Readme.md)
+[2. Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
+
 
