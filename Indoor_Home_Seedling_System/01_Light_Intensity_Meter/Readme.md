@@ -119,7 +119,7 @@ void loop()
 
 ## Notes:
 - Keep in mind that SCL and SDA pins will be used for RTC and I2C LCD screen. Arduino Mega got 2 pins for each, but smaller boards usually got one only and there is where breadboard is needed. Also, 5.0v or 3.3v will be used for 7 modules in our project, Arduino Mega got plenty of them, while micro boards got only 1 or 2
-- Arduino Mega maximum baud rate is 115200 bps, while Uno is only 9600 bps. Check yours board baud rate and put it in ```Serial.begin(9600);``` line 
+- Arduino Mega maximum baud rate is (115200) bps, while Uno is only (9600) bps. Check yours board baud rate and put it in ```Serial.begin(9600);``` line 
 
 
 ### Pro Tip!!
