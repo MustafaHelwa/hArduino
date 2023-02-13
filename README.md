@@ -1,2 +1,5 @@
-# hArduino
-This repository showcases my Arduino projects with accompanying codes and wiring diagrams. Want to create similar projects? Feel free to peruse my work and bring your own unique spin to the table
+# hArduino: Your Guide to Arduino Projects
+Welcome to my repository showcasing my Arduino projects! Here, you'll find detailed instructions, wiring diagrams, and code for each project. Whether you're a seasoned pro or just getting started with Arduino, feel free to explore and add your own spin to the projects.
+
+#What's Inside?
+Each project in this repository starts with a description of the goal, desired outcomes, and tools used. From there, you'll find step-by-step wiring and coding instructions, leading up to the final code for each project.
