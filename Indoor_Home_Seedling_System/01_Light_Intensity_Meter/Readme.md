@@ -126,4 +126,6 @@ void loop()
 **You can always outsource 5.0v and GND using external DC supply. Always check module voltage range before applying external source current.**
 
 
-See you in the next project...
+See you in the next microProject... 
+[a relative link](hArduino/Indoor_Home_Seedling_System/02_RealTimeClock/Readme.md)
+
