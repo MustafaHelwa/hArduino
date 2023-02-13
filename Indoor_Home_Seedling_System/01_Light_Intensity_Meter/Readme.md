@@ -52,13 +52,35 @@ BH1750 wiring will be as the following:
 4. SDA  ->  SDA1 or 20 for ArduinoMega (SDA1 in my case)  //if you're using other boards just check your SDA pin
 
 ## Coding: 
-Once we finished wiring, we'll install <BH1750.h> and <Wire.h> libraries and use the following code: 
-
+Once we finished wiring, we'll install <BH1750.h> and <Wire.h> libraries and use the following code to define our light meter: 
 ```
 #include <Wire.h>
 #include <BH1750.h>
 BH1750 lightMeter;
 ```
+
+Then, we'll initiate both **Wire** and **lightmeter** in the **void setup()** as the following: 
+```
+void setup()
+{
+  Serial.begin(9600);
+  Wire.begin();
+  lightMeter.begin();
+}
+```
+
+Finally, in the **void loop()**, we'll record meter reading as *float* then print it and delay for 1 second: 
+```
+void loop() 
+{  float lux = lightMeter.readLightLevel();                
+  
+  Serial.print("Light: ");
+  Serial.print(lux);
+  Serial.println(" lx");
+  delay(1000);
+}
+```
+
 
 
 
