@@ -31,7 +31,7 @@ The outcome of this project is a functioning light intensity meter to accurately
 12.  ~~8 Relay Module ( https://amzn.to/40UXPBI )~~
 13.  ~~LCD Screen 20x4 I2C ( https://amzn.to/3XqoR0G )~~
 14.  ~~5VDC Water pump ( https://amzn.to/3RWB38d )~~
-15.  ~~Box (~240mm x 130mm x 90mm)~~
+15.  ~~Box (about 240mm x 130mm x 90mm)~~
 16.  LED lights as needed
 17.  ~~Water bucket with connections~~
 
