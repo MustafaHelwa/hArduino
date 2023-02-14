@@ -103,9 +103,7 @@ void loop()
 
 ## Serial Monitor: 
 
-
-
-
+![image](https://user-images.githubusercontent.com/65976495/218707591-c893513e-2673-436a-919b-33ca7e37c7a3.png)
 
 ## Notes:
 - Keep in mind that SCL and SDA pins will be used for RTC and I2C LCD screen. Arduino Mega got 2 pins for each, but smaller boards usually got one only and there is where breadboard is needed. Also, 5.0v or 3.3v will be used for 7 modules in our project, Arduino Mega got plenty of them, while micro boards got only 1 or 2
