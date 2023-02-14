@@ -38,6 +38,10 @@ LCD I2C module wiring for Arduino Mega will be as the following:
 
 Diagram:
 
+![image](https://user-images.githubusercontent.com/65976495/218754467-45ab5dd4-d861-4ddb-9e22-a65e07f81859.png)
+
+
+
 ## Coding: 
 ### libraries:
 Once we finished wiring, we'll install <LiquidCrystal_I2C.h> library and use the following code to define our lcd: 
