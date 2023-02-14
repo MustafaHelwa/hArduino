@@ -157,11 +157,10 @@ void loop()
 
 ## Notes:
 - In ```map(SoilMoistureValue, x, y, 0, 100);``` x will be the value when sensor is in the air and y will be the value when the sensor is in the water
-- To get x and y values, comment ```line 68``` and do 2 runs (one in the air and one in the water) and record the values as explained above
 
 
 ### Pro Tip!!
-- You can use multiple sensors on different depths and react accordingly
+You can use multiple sensors on different depths and react accordingly
 
 
 
