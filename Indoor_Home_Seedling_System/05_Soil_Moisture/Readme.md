@@ -97,7 +97,6 @@ void loop()
   SoilMoistureValue = SoilMoistureValue/101.0;           // this line calculates the average soil moisture readings recorded in the for loop above
   
   Serial.print("Soil moisture: ");
-//  SoilMoistureValue = map ( SoilMoistureValue, 575 ,276 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
     
   Serial.print(SoilMoistureValue);                              
   Serial.println("%");
@@ -125,7 +124,7 @@ void loop()
   SoilMoistureValue = SoilMoistureValue/101.0;           // this line calculates the average soil moisture readings recorded in the for loop above
   
   Serial.print("Soil moisture: ");
-  SoilMoistureValue = map ( SoilMoistureValue, 575 ,276 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
+  SoilMoistureValue = map ( SoilMoistureValue, 575 ,280 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
     
   Serial.print(SoilMoistureValue);                              
   Serial.println("%");
@@ -133,6 +132,7 @@ void loop()
 ```
 ## Serial Monitor: 
 
+![image](https://user-images.githubusercontent.com/65976495/218725773-88cd3d17-9e9d-40a1-a11c-b204b4740613.png)
 
 
 
