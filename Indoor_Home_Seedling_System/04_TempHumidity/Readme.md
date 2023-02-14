@@ -71,8 +71,40 @@ void loop()
 }
 ```
 
+
+### Final Code: 
+This is the code result, you can copy it as it is: 
+```
+#include <DHT.h>
+#define DHTPin 2                                        // any PWM pin works (2 in my case)
+#define DHTType DHT22                                   // DHT22 or DHT11 (DHT22 in my case)
+DHT dht = DHT(DHTPin, DHTType);
+
+
+
+void setup()
+{
+  Serial.begin(9600);
+  dht.begin();
+}
+
+void loop() 
+{  
+  float h = dht.readHumidity();
+  float t = dht.readTemperature();
+
+  Serial.print("Temp: ");
+  Serial.print(t);
+  Serial.print(" C, Humidity: ");
+  Serial.print(h);
+  Serial.println("%");
+  delay (1000);
+}
+```
 ## Serial Monitor: 
 
+
+![image](https://user-images.githubusercontent.com/65976495/218720808-d6c2bf48-7f4a-4003-b4bd-0f7d2f5bd336.png)
 
 
 
