@@ -41,7 +41,11 @@ DS3231 wiring will be as the following:
 3. SCL  ->  SCL1 or 21 for ArduinoMega (SCL1 in my case)  //if you're using other boards just check your SCL pin 
 4. SDA  ->  SDA1 or 20 for ArduinoMega (SDA1 in my case)  //if you're using other boards just check your SDA pin
 
-Diagram:
+**Diagram:**
+
+![image](https://user-images.githubusercontent.com/65976495/218759400-9ac105b7-3cb5-4574-8d21-d069702b76c0.png)
+
+(Note: as explained above, you can use any SCL and SDA pins, just adjust the below code accordingly)
 
 ## Coding: 
 ### libraries:
