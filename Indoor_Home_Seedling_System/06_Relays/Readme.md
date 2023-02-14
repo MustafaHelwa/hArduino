@@ -128,6 +128,84 @@ void loop()
 }
 ```
 
+
+### Final Code: 
+This is the code result, you can copy it as it is: 
+
+```
+// all the below numbers are optional based on your loads
+const int ValvePin = 31;        // this pin will be used to control Valve
+const int LightPin1 = 32;       // this pin will be used to control light#1
+const int LightPin2 = 33;       // this pin will be used to control light#2
+
+int lightstatus, valvestatus;   // this int will be used for defining controlled loads status
+
+
+void setup()
+{
+  Serial.begin(9600);
+
+  pinMode (ValvePin, OUTPUT );        digitalWrite (ValvePin, LOW);
+  pinMode (LightPin1, OUTPUT );        digitalWrite (LightPin1, LOW); 
+  pinMode (LightPin2, OUTPUT );        digitalWrite (LightPin2, LOW); 
+  pinMode (34, OUTPUT );        digitalWrite (34, LOW); 
+  pinMode (35, OUTPUT );        digitalWrite (35, LOW);
+  pinMode (36, OUTPUT );        digitalWrite (36, LOW);
+  pinMode (37, OUTPUT );        digitalWrite (37, LOW);
+  pinMode (38, OUTPUT );        digitalWrite (38, LOW);
+}
+
+void loop() 
+{  
+  // We'll open water once Soil Moisture is less 60% and leave the loop when soil moisture is 80% or above 
+  float SoilMoistureValue = 35.0;
+  
+  if (SoilMoistureValue <= 60.0)
+     {
+      digitalWrite (ValvePin, HIGH);
+      valvestatus = 1;
+      
+      while (SoilMoistureValue < 80.0)
+      {
+      Serial.print("SM: ");
+      Serial.println (SoilMoistureValue);
+      delay (100);
+      SoilMoistureValue = SoilMoistureValue+ 5;
+      }
+
+     }
+      else 
+        {
+        digitalWrite (ValvePin, LOW);
+        valvestatus = 0;
+        }
+        
+    if (valvestatus ==1) Serial.println ("Valve Status: Open");
+    else Serial.println ("Valve Status: Closed");
+
+    
+  // Light on/off based on time
+  
+  int timer = 1;
+  if ( timer < 10 )
+    {
+    digitalWrite (LightPin1, LOW);
+    digitalWrite (LightPin2, LOW);
+    lightstatus = 1;
+    timer = timer + 1; 
+    } 
+    else
+      {
+        digitalWrite (LightPin1, HIGH);
+        digitalWrite (LightPin2, HIGH);
+        lightstatus = 0;
+      }
+    if (lightstatus = 1) Serial.println ("Lights Status: On");
+        else Serial.println ("Lights Status: Off");
+
+     delay(1000);
+}
+```
 ## Serial Monitor: 
 
 
