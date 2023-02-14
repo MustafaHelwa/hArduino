@@ -86,12 +86,12 @@ void loop()
       digitalWrite (ValvePin, HIGH);
       valvestatus = 1;
       
-      for (SoilMoistureValue < 80.0)
+      while (SoilMoistureValue < 80.0)
       {
-      digitalWrite ("SM: ");
-      digitalWrite (SoilMoistureValue);
+      Serial.print("SM: ");
+      Serial.println (SoilMoistureValue);
       delay (100);
-      SoilMoistureValue =+ 1;
+      SoilMoistureValue = SoilMoistureValue+ 1;
       }
 
      }
@@ -103,15 +103,17 @@ void loop()
         
     if (valvestatus ==1) Serial.println ("Valve Status: Open");
     else Serial.println ("Valve Status: Closed");
+
+    
   // Light on/off based on time
   
-  int time = 1;
-  if ( time < 10 )
+  int timer = 1;
+  if ( timer < 10 )
     {
     digitalWrite (LightPin1, LOW);
     digitalWrite (LightPin2, LOW);
     lightstatus = 1;
-    time =+1; 
+    timer = timer + 1; 
     } 
     else
       {
@@ -121,22 +123,25 @@ void loop()
       }
     if (lightstatus = 1) Serial.println ("Lights Status: On");
         else Serial.println ("Lights Status: Off");
+
+     delay(1000);
 }
 ```
 
 ## Serial Monitor: 
 
 
+![image](https://user-images.githubusercontent.com/65976495/218728771-5a508e95-d2df-40b0-8fc4-cc0be3babf6b.png)
 
 
 
 ## Notes:
-- You can adjust soil moisture limits by adjusting the numbersin line83 and line 88
-- Light is based on time only in our project, but you can control it with ```lux```  
+- You can adjust soil moisture limits by adjusting the numbers in line83 and line 88
+- adjust ```SoilMoistureValue``` and ```timer``` and check the results
 
 
 ### Pro Tip!!
-
+- You can always control your relays based on sensor readings rather than constant values
 
 
 
