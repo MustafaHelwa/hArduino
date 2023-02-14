@@ -30,8 +30,8 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
 
 ## Wiring:
 DHT22 wiring for Arduino Mega will be as the following: 
-1.  + -> 3.3v
-2.  - -> GND
+1.  (+) -> 3.3v
+2.  (-) -> GND
 3.  Out -> 2 (or any other PWM pin)  
 
 **Diagram:**
