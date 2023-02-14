@@ -79,6 +79,7 @@ Finally, in the ```void loop()```, we'll read and write soil moisture and delay 
 void loop() 
 {  
   // We'll open water once Soil Moisture is less 60% and leave the loop when soil moisture is 80% or above 
+  float SoilMoistureValue = 40.0;
   
   if (SoilMoistureValue <= 60.0)
      {
@@ -89,7 +90,8 @@ void loop()
       {
       digitalWrite ("SM: ");
       digitalWrite (SoilMoistureValue);
-      delay (1000);
+      delay (100);
+      SoilMoistureValue =+ 1;
       }
 
      }
@@ -102,12 +104,14 @@ void loop()
     if (valvestatus ==1) Serial.println ("Valve Status: Open");
     else Serial.println ("Valve Status: Closed");
   // Light on/off based on time
-  if ( rtc.getTime().hour==6 || rtc.getTime().hour==7 || rtc.getTime().hour==8 || rtc.getTime().hour == 9 || rtc.getTime().hour==10 || rtc.getTime().hour==11 || rtc.getTime().hour==12 ||
-       rtc.getTime().hour==13 || rtc.getTime().hour==14 || rtc.getTime().hour==15 || rtc.getTime().hour==16 || rtc.getTime().hour==17 || rtc.getTime().hour==18 )
+  
+  int time = 1;
+  if ( time < 10 )
     {
     digitalWrite (LightPin1, LOW);
     digitalWrite (LightPin2, LOW);
     lightstatus = 1;
+    time =+1; 
     } 
     else
       {
@@ -127,8 +131,8 @@ void loop()
 
 
 ## Notes:
-- You can adjust the desired soil moisture by adjusting the numbersin line83 and line 88
-- Light is based on time only but you can control it with ```lux```  
+- You can adjust soil moisture limits by adjusting the numbersin line83 and line 88
+- Light is based on time only in our project, but you can control it with ```lux```  
 
 
 ### Pro Tip!!
