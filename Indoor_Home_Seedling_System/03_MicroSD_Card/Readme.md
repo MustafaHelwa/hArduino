@@ -30,6 +30,14 @@ The outcome of this project will be a storage system for the collected data in c
 In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and Micro SD Card Module. We'll also need jumpers for wiring. 
 Before wiring, connect your SD card to your PC and format it in ```fat32``` type then plug it in you Micro SD Card Module and follow the below: 
 
+## SD Card Format: 
+
+![image](https://user-images.githubusercontent.com/65976495/218712307-29a40c96-6f37-45c6-94bf-2118855744dc.png)
+
+![image](https://user-images.githubusercontent.com/65976495/218712379-5f3cc0dd-1eb3-4935-9a7a-dac06ac2ccb1.png)
+
+
+
 
 ## Wiring:
 Micro SD Card Module wiring for Arduino Mega will be as the following (or check your alternative pins for other boards): 
