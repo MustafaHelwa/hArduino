@@ -78,7 +78,6 @@ This is the code result, you can copy it as it is:
 
 **Test Runs:**
 ```
-
 #define SoilMoisturePin A0    // or any analog pin used
 
 void setup()
@@ -107,7 +106,6 @@ void loop()
 
 **Final Run:**
 ```
-
 #define SoilMoisturePin A0    // or any analog pin used
 
 void setup()
