@@ -59,9 +59,9 @@ void setup()
   rtc.begin();
    
   // The following lines can be uncommented to set the date and time
-  rtc.setDOW(SUNDAY);     // Set Day-of-Week to SUNDAY
+  rtc.setDOW(TUESDAY);     // Set Day-of-Week to SUNDAY
   rtc.setTime(13, 52, 00);     // Set the time to 12:00:00 (24hr format)
-  rtc.setDate(2, 12, 2023);   // Set the date to January 1st, 2014
+  rtc.setDate(14, 02, 2023);   // Set the date to January 1st, 2014
 }
 ```
 
@@ -96,9 +96,9 @@ void setup()
   rtc.begin();
    
   // The following lines can be uncommented to set the date and time
-  rtc.setDOW(SUNDAY);     // Set Day-of-Week to SUNDAY
+  rtc.setDOW(TUESDAY);     // Set Day-of-Week to SUNDAY
   rtc.setTime(13, 52, 00);     // Set the time to 12:00:00 (24hr format)
-  rtc.setDate(2, 12, 2023);   // Set the date to January 1st, 2014
+  rtc.setDate(14, 02, 2023);   // Set the date to January 1st, 2014
 }
 
 void loop() 
@@ -125,9 +125,9 @@ void setup()
 
   /*
   // The following lines can be uncommented to set the date and time
-  rtc.setDOW(SUNDAY);     // Set Day-of-Week to SUNDAY
+  rtc.setDOW(TUESDAY);     // Set Day-of-Week to SUNDAY
   rtc.setTime(13, 52, 00);     // Set the time to 12:00:00 (24hr format)
-  rtc.setDate(2, 12, 2023);   // Set the date to January 1st, 2014
+  rtc.setDate(14, 02, 2023);   // Set the date to January 1st, 2014
   */
 }
 
