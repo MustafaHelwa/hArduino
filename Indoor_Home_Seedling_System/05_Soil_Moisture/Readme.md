@@ -72,6 +72,67 @@ void loop()
 }
 ```
 
+
+### Final Code: 
+This is the code result, you can copy it as it is: 
+
+**Test Runs:**
+```
+
+#define SoilMoisturePin A0    // or any analog pin used
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop() 
+{  
+  float SoilMoistureValue = 0;                           // Starting with zero value to make sure the below is not carried from the last previous reading
+
+  for (int i = 0; i <= 100; i++)                         // the below for loop used to take 101 readings (form 0 to 100) and accumilate the value of readings 
+  { 
+    SoilMoistureValue = SoilMoistureValue + analogRead(SoilMoisturePin); 
+    delay(1); 
+  } 
+  SoilMoistureValue = SoilMoistureValue/101.0;           // this line calculates the average soil moisture readings recorded in the for loop above
+  
+  Serial.print("Soil moisture: ");
+//  SoilMoistureValue = map ( SoilMoistureValue, 575 ,276 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
+    
+  Serial.print(SoilMoistureValue);                              
+  Serial.println("%");
+}
+```
+
+**Final Run:**
+```
+
+#define SoilMoisturePin A0    // or any analog pin used
+
+void setup()
+{
+  Serial.begin(9600);
+}
+
+void loop() 
+{  
+  float SoilMoistureValue = 0;                           // Starting with zero value to make sure the below is not carried from the last previous reading
+
+  for (int i = 0; i <= 100; i++)                         // the below for loop used to take 101 readings (form 0 to 100) and accumilate the value of readings 
+  { 
+    SoilMoistureValue = SoilMoistureValue + analogRead(SoilMoisturePin); 
+    delay(1); 
+  } 
+  SoilMoistureValue = SoilMoistureValue/101.0;           // this line calculates the average soil moisture readings recorded in the for loop above
+  
+  Serial.print("Soil moisture: ");
+  SoilMoistureValue = map ( SoilMoistureValue, 575 ,276 ,0, 100);      // mapping the 0% value as the sensor reading; when it is out of water (575 in my case). Followed by 100% value; when it is fully merged in water cup (276 in my case)
+    
+  Serial.print(SoilMoistureValue);                              
+  Serial.println("%");
+}
+```
 ## Serial Monitor: 
 
 
