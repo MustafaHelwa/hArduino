@@ -102,7 +102,7 @@ void loop()
 
 
 ### Pro Tip!!
-- Any LCD is never small. You can display more data if needed, simply write your first insights, delay for 3 seconds, clear your screen, and write the next insights 
+- LCD screens are never small. You can display more data if needed, simply write your first insights, delay for 3 seconds, clear your screen, and write the next insights 
 
 
 
