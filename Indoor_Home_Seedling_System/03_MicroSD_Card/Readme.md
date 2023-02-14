@@ -34,15 +34,20 @@ Before wiring, connect your SD card to your PC and format it in ```fat32``` type
 
 ![image](https://user-images.githubusercontent.com/65976495/218712307-29a40c96-6f37-45c6-94bf-2118855744dc.png)
 
+
+
 ![image](https://user-images.githubusercontent.com/65976495/218712379-5f3cc0dd-1eb3-4935-9a7a-dac06ac2ccb1.png)
 
+
+
+![image](https://user-images.githubusercontent.com/65976495/218718283-12e8b520-90e2-4335-9fb2-0e3bd9146b7e.png)
 
 
 
 ## Wiring:
 Micro SD Card Module wiring for Arduino Mega will be as the following (or check your alternative pins for other boards): 
-1. VCC  -> 5.0v
-2. GND  -> GND
+1. GND  -> GND
+2. VCC  -> 5.0v
 3. MISO -> 50
 4. MOSI -> 51
 5. SCK  -> 52
@@ -63,6 +68,7 @@ Then, we'll initiate **SD** and create our **data.text** file in the ```void set
 ```
 void setup()
 {
+  Serial.begin(9600);
   SD.begin(53);                                           // CS pin number 53 in my case
   dataFile = SD.open("data.txt", FILE_WRITE);             // to create new file on SD card as text
 }
@@ -97,6 +103,10 @@ void loop()
     }
 }
 ```
+
+
+### Final Code: 
+
 
 ## Serial Monitor: 
 
