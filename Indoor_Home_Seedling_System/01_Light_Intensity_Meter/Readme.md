@@ -42,7 +42,11 @@ BH1750 wiring will be as the following:
 3. SCL  ->  SCL1 or 21 for ArduinoMega (SCL1 in my case)  //if you're using other boards just check your SCL pin 
 4. SDA  ->  SDA1 or 20 for ArduinoMega (SDA1 in my case)  //if you're using other boards just check your SDA pin
 
-Diagram:
+**Diagram:**
+
+![image](https://user-images.githubusercontent.com/65976495/218759930-d65662a4-41b9-49da-8f6f-bb928331caf0.png)
+
+(Note: as explained above, you can use any SCL and SDA pins, this will not affect the used code)
 
 ## Coding: 
 ### libraries:
