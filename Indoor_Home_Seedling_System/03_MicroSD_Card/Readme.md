@@ -53,7 +53,11 @@ Micro SD Card Module wiring for Arduino Mega will be as the following (or check 
 5. SCK  -> 52
 6. CS   -> 53
 
-Diagram:
+**Diagram:**
+
+![image](https://user-images.githubusercontent.com/65976495/218758913-0ae3b1e7-ed98-4577-b11e-edc2eb1f6039.png)
+
+(Note: 330 ohm resistance used above can be ignored in our module)
 
 ## Coding: 
 ### libraries:
