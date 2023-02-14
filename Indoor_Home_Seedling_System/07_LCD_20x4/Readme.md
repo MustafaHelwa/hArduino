@@ -106,7 +106,7 @@ void loop()
 
 
 
-See you in the next microProject...
+See you in the final Project...
 
 [Next: 8. Final Project](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/08_Final_Project)
 
