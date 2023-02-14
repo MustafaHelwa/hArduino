@@ -152,6 +152,16 @@ void loop()
 ## Serial Monitor: 
 
 
+![image](https://user-images.githubusercontent.com/65976495/218719856-f4fee815-d000-4c1c-ad2f-d66a0900770e.png)
+
+
+
+
+## Text File: 
+
+
+![image](https://user-images.githubusercontent.com/65976495/218719976-b14dac5d-b7a6-434a-bfd0-dac9fdb81a3a.png)
+
 
 
 
