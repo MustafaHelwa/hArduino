@@ -43,7 +43,9 @@ Relay Module wiring for Arduino Mega will be as the following (I am using 8 Rela
 9.  IN7 -> 37
 10. IN8 -> 38
 
-Diagram:
+**Diagram:**
+![Diagram](https://user-images.githubusercontent.com/65976495/218757536-7bf14966-7634-4438-8010-34fcab96a98c.png)
+(Note: that 2, 4 or 8 Relay module can be used the same way)
 
 ## Coding: 
 ### libraries:
