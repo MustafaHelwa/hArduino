@@ -32,15 +32,20 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
 Capasitive soil moisture sensor wiring for Arduino Mega will be as the following: 
 1.  GND -> GND
 2.  VCC -> 3.3V
-3.  AOOT -> A0 (or any analog input pin) 
+3.  AOOT -> A10 (or any analog input pin) 
 
-Diagram:
+**Diagram:**
+
+![image](https://user-images.githubusercontent.com/65976495/218758165-a85a0d95-502d-4209-895b-57a580992ccf.png)
+
+
+
 
 ## Coding: 
 ### libraries:
 Once we finished wiring, we'll use the following code to define our pin. There is no library needed for Soil Moisture sensor (we'll do our own mapping): 
 ```
-#define SoilMoisturePin A0    // or any analog pin used
+#define SoilMoisturePin A10    // or any analog pin used
 ```
 ### void setup():
 Since we don't have any library, we'll not add any code in ```void setup()``` and it will be as the following: 
@@ -78,7 +83,7 @@ This is the code result, you can copy it as it is:
 
 **Test Runs:**
 ```
-#define SoilMoisturePin A0    // or any analog pin used
+#define SoilMoisturePin A10    // or any analog pin used
 
 void setup()
 {
@@ -105,7 +110,7 @@ void loop()
 
 **Final Run:**
 ```
-#define SoilMoisturePin A0    // or any analog pin used
+#define SoilMoisturePin A10    // or any analog pin used
 
 void setup()
 {
