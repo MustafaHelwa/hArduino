@@ -144,6 +144,7 @@ void loop()
 
 ## Serial Monitor: 
 
+![image](https://user-images.githubusercontent.com/65976495/218710708-7f7a8a5d-a51f-4aa2-96c9-50c8e35b5893.png)
 
 
 
