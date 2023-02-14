@@ -38,7 +38,7 @@ LCD I2C module wiring for Arduino Mega will be as the following:
 
 Diagram:
 
-![image](https://user-images.githubusercontent.com/65976495/218754467-45ab5dd4-d861-4ddb-9e22-a65e07f81859.png)
+![Diagram](https://user-images.githubusercontent.com/65976495/218754467-45ab5dd4-d861-4ddb-9e22-a65e07f81859.png)
 
 
 
