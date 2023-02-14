@@ -40,6 +40,12 @@ DHT22 wiring for Arduino Mega will be as the following:
 
 (Note: DHT22 sensor above uses 4 pins, while our DHT22 module is only 2 pins)
 
+
+
+
+
+
+
 ## Coding: 
 ### libraries:
 Once we finished wiring, we'll install ```<DHT.h>``` library and use the following code to define our used pin, sensor type, and dht variable: 
