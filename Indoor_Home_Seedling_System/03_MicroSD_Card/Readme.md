@@ -106,7 +106,48 @@ void loop()
 
 
 ### Final Code: 
+```
+#include <SPI.h>
+#include <SD.h>
+File dataFile;
 
+
+
+void setup()
+{
+  Serial.begin(9600);
+  SD.begin(53);                                           // CS pin number 53 in my case
+  dataFile = SD.open("data.txt", FILE_WRITE);             // to create new file on SD card as text
+}
+
+void loop() 
+{  
+    dataFile = SD.open("data.txt", FILE_WRITE);                         // Opening data file on SD card to start writing
+   
+    if (dataFile) 
+    {
+    
+    Serial.print("Recording on SD Card... ");       // to keep tracking that file is available 
+    
+    dataFile.print("13-2-2023"); 
+    dataFile.print (", ");                          // , since I'll use excel csv file later
+    dataFile.print ("15:27:31");                    // recording full time (hh:mm:ss)
+    dataFile.print(", " );
+    dataFile.print("25.17");
+    dataFile.print(", " );
+    dataFile.print("17695.125");                    // recording lux
+    dataFile.println();                             // new line
+    dataFile.close();                               // close the file
+
+    Serial.println("Recording done :)");
+  }
+  else                                              // if recording on SD card failed
+    {
+      Serial.println("Error recording data!!!");
+    }
+  delay(1000);
+}
+```
 
 ## Serial Monitor: 
 
