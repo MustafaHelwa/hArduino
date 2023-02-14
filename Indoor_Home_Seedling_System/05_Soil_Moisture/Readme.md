@@ -132,7 +132,11 @@ void loop()
 ```
 ## Serial Monitor: 
 
+**Test Run:**
 ![image](https://user-images.githubusercontent.com/65976495/218725773-88cd3d17-9e9d-40a1-a11c-b204b4740613.png)
+
+**Final Run:**
+![image](https://user-images.githubusercontent.com/65976495/218726263-56fc53d5-09b4-45a4-85fe-57d2eec4afad.png)
 
 
 
