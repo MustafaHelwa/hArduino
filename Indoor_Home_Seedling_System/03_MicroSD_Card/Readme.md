@@ -106,6 +106,7 @@ void loop()
 
 
 ### Final Code: 
+This is the code result, you can copy it as it is: 
 ```
 #include <SPI.h>
 #include <SD.h>
