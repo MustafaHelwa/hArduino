@@ -395,17 +395,12 @@ void loop()
 
 
 ## Notes:
-- Lines73, 77, 82, 84, and 89 will be used with sensor variables that has been collected (those numbers are only for demonstration)
+- You can adjust your controlled loads within and power supply and relay limits
+- You can adjust running hours, running conditions, and any other variables you may think off 
 
 
 ### Pro Tip!!
-- LCD screens are never small. You can display more data if needed, simply write your first insights, delay for 3 seconds, clear your screen, and write the next insights 
+You can use your relays to control massive loads, even 3-phase ones, by adding contactors and more advanced parts 
 
 
-
-See you in the final Project...
-
-
-
-
-Stay safe and Have Fun :)
+I hope you enjoyed the project...
