@@ -1,4 +1,4 @@
-#  Final Project- Indoor Home Seedling System: 
+#  Final Project - Indoor Home Seedling System: 
 
 ## What's Inside?
 ### Problem: 
