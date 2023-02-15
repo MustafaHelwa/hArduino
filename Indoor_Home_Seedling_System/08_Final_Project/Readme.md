@@ -1,4 +1,4 @@
-# Ardunio Mega Indoor Home Seedling System - Final Project: 
+#  Final Project- Indoor Home Seedling System: 
 
 ## What's Inside?
 ### Problem: 
@@ -38,7 +38,7 @@ An automated lighting and irrigation system for my indoor plants.
 
 
 ## Work Inroduction:
-In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and all tools that have been used in the previous microProjects
+In this project, we'll use any Arduino board (I'll use Arduino Mega for further work on the same board) and all tools that have been used in the previous microProjects. You can refer to microProject page to see the details of each module. 
 
 ## Wiring:
 
