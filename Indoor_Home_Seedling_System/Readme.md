@@ -9,13 +9,22 @@ That's why I aim to design an automated lighting and irrigation system for my in
 
 ### Compact microProjects: 
 [1. Light Intensity meter - BH1750](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/01_Light_Intensity_Meter)
+
 [2. Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
+
 [3. MicroSD Card csv data collection](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/03_MicroSD_Card)
+
 [4. Temperature and Humidity - DHT22](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/04_TempHumidity)
+
 [5. Capasitive Soil Moisture sensor](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/05_Soil_Moisture)
+
 [6. Relay modules and load wiring](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/06_Relays)
+
 [7. LCD Screen](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/07_LCD_20x4)
+
 [8. Final Project](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/08_Final_Project)
+
+
 
 ### Tools Needed:
 1.   Arduino Mega 2560 Rev3 or any other type ( https://amzn.to/3E3U577 )
