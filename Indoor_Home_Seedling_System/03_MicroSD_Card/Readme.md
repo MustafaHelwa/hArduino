@@ -17,13 +17,13 @@ The outcome of this project will be a storage system for the collected data in c
 7. LCD Screen
 
 ### Tools Needed:
-1.   Arduino Mega 2560 Rev3 or any other type ( https://amzn.to/3E3U577 )
-2.   USB type A to type B ( https://amzn.to/3xgKFB5 )
-3.   Breadboard ( https://amzn.to/3xBzaol )
-4.   Power Supply ( https://amzn.to/412eTpo )
-5.   Jumper wires ( https://amzn.to/3XqQXc4 )
-6.   Micro SD Card Module ( https://amzn.to/3xfDSYD )
-7.   Micro SD Card with adaptor - Any capacity ( https://amzn.to/3xl3AuS )
+1.   [Arduino Mega 2560 Rev3](https://amzn.to/3E3U577) or any other type
+2.   [USB type A to type B](https://amzn.to/3xgKFB5)
+3.   [Breadboard](https://amzn.to/3xBzaol)
+4.   [Power Supply](https://amzn.to/412eTpo)
+5.   [Jumper wires](https://amzn.to/3XqQXc4)
+6.   [Micro SD Card Module](https://amzn.to/3xfDSYD)
+7.   [Micro SD Card with adaptor - Any capacity](https://amzn.to/3xl3AuS)
 
 
 ## Work Inroduction:
