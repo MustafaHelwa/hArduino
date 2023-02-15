@@ -8,21 +8,14 @@ My passion for indoor plants is hindered by my frequent absences from home, leav
 That's why I aim to design an automated lighting and irrigation system for my indoor plants to ensure they receive the proper care and attention, even when I am away
 
 ### Compact microProjects: 
-[1. Light Intensity meter - BH1750](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/01_Light_Intensity_Meter)
-
-[2. Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
-
-[3. MicroSD Card csv data collection](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/03_MicroSD_Card)
-
-[4. Temperature and Humidity - DHT22](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/04_TempHumidity)
-
-[5. Capasitive Soil Moisture sensor](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/05_Soil_Moisture)
-
-[6. Relay modules and load wiring](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/06_Relays)
-
-[7. LCD Screen](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/07_LCD_20x4)
-
-[8. Final Project](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/08_Final_Project)
+1. [Light Intensity meter - BH1750](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/01_Light_Intensity_Meter)
+2. [Real Time Clock](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/02_RealTimeClock)
+3. [MicroSD Card csv data collection](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/03_MicroSD_Card)
+4. [Temperature and Humidity - DHT22](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/04_TempHumidity)
+5. [Capasitive Soil Moisture sensor](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/05_Soil_Moisture)
+6. [Relay modules and load wiring](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/06_Relays)
+7. [LCD Screen](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/07_LCD_20x4)
+8. [Final Project](https://github.com/MustafaHelwa/hArduino/tree/main/Indoor_Home_Seedling_System/08_Final_Project)
 
 
 
