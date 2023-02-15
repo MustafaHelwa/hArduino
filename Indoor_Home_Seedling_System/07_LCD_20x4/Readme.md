@@ -17,12 +17,12 @@ This project aims to show real-time insights of our system using LCD Screen
 7. **LCD Screen**
 
 ### Tools Needed:
-1.   Arduino Mega 2560 Rev3 or any other type ( https://amzn.to/3E3U577 )
-2.   USB type A to type B ( https://amzn.to/3xgKFB5 )
-3.   Breadboard ( https://amzn.to/3xBzaol )
-4.   Power Supply ( https://amzn.to/412eTpo )
-5.   Jumper wires ( https://amzn.to/3XqQXc4 )
-6.   LCD Screen 20x4 I2C ( https://amzn.to/3XqoR0G )
+1.   [Arduino Mega 2560 Rev3](https://amzn.to/3E3U577) or any other type
+2.   [SB type A to type B](https://amzn.to/3xgKFB5)
+3.   [readboard](https://amzn.to/3xBzaol)
+4.   [Power Supply](https://amzn.to/412eTpo)
+5.   [Jumper wires](https://amzn.to/3XqQXc4)
+6.   [LCD Screen 20x4 I2C](https://amzn.to/3XqoR0G)
 
 
 
