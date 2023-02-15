@@ -397,6 +397,8 @@ void loop()
 ## Notes:
 - You can adjust your controlled loads within and power supply and relay limits
 - You can adjust running hours, running conditions, and any other variables you may think off 
+- Monitor your system for at least one days before leaving it, just to make sure it is running the way your plant needs
+- After recording some data, check it using your PC and add columns names at the top of your text file. It will make it easier to import to Excel later
 
 
 ### Pro Tip!!
