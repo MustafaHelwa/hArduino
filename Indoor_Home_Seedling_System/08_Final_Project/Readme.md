@@ -93,7 +93,7 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
 
 **Diagram:**
 
-![Diagram](https://user-images.githubusercontent.com/65976495/219017965-fa85c88f-7b51-4d4b-a701-aa686602d66d.png)
+![Diagram](https://user-images.githubusercontent.com/65976495/219019497-8c4bcc45-0d74-4dd0-a397-cfafa3a692a6.png)
 
 
 
