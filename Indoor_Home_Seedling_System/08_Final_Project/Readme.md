@@ -47,11 +47,13 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
   - GND -> GND
   - SCL -> SCL1 or 21 (SCL1 in my case)
   - SDA -> SDA1 or 20 (SDA1 in my case)
+  
 **2.  RTC:**
   - VCC -> 5.0V
   - GND -> GND
   - SCL -> SCL1 or 21 (SCL1 in my case)
   - SDA -> SDA1 or 20 (SDA1 in my case) 
+  
 **3.  MicroSD Card Adapter Module:**
   - GND -> GND
   - VCC -> 5.0V
@@ -59,15 +61,18 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
   - MOSI -> 51
   - SCK -> 52
   - CS -> 53
+  
 **4.  DHT22**
   - (+) -> 3.3v
   - (-) -> GND
   - Out -> 2 (PWM)
+  
 **5.  Soil Moisture**
   - GND -> GND
   - VCC -> 3.3V
   - AOUT -> A10
-**6.  Relays: **
+  
+**6.  Relays:**
   - ~~GND -> GND~~
   - VCC -> 5V
   - IN1 -> 31
@@ -78,11 +83,14 @@ In this project, we'll use any Arduino board (I'll use Arduino Mega for further 
   - IN6 -> 36
   - IN7 -> 37
   - IN8 -> 38
+  
 **7.  LCD 20x4 I2C:**
   - GND -> GND
   - VCC -> VCC
   - SDA -> 20
   - SCL -> 21  
+
+
 **Diagram:**
 
 ![Diagram](https://user-images.githubusercontent.com/65976495/218754467-45ab5dd4-d861-4ddb-9e22-a65e07f81859.png)
